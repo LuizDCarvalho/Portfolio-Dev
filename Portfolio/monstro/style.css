@@ -1,0 +1,10 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    position: center;
+    background-image: url('solar.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

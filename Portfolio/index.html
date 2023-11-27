@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e535e1338d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/logotab.png"> <!--Ajudstar o tamanho do icone-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>LuizDev-Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./img/logoblacksem.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello It's Me</p>
+                <h1>Luiz<span> Carvalho</span></h1>
+                <h3>I'm a <span class="text"></span> </h3>
+            </div>
+        </div>
+    </div> 
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/perfil01.png" alt="Sua Imagem">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Um programador que está em constante evolução, trago soluções para os seus problemas.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Figma e UI/UX</span><br> Designer</li>
+                            <li><span>Web Development</span><br> Criação de sites</li>
+                            <li><span>FullStack-Development</span><br> Desenvolvimento de programas e sites</li>
+                            <li><span>Tecnico em Informatica</span><br> Supporte Tecnico de TI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2016</span><br>Web Development training</li>
+                            <li><span>2017-2018</span><br>Front-End Development training</li>
+                            <li><span>2018-2019</span><br>Figma design training<br>UI/UX design training</li>
+                            <li><span>2019-2020</span><br>Back-End training</li>
+                            <li><span>2020</span><br>FullStack-Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2018</span><br>W3school/Fundação Bradesco</li>
+                            <li><span>2019-2024(Atual)</span><br>Faculdade Ciência da Computação</li>
+                            <li><span>2023(Atual)</span><br>Leetcode/Rocketseat/freecodecamp</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------Services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+                <h2>FullStack-Development</h2>
+                <p>Códigos e programas de alta qualidade para atender às suas necessidades.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Ui/UX Designer</h2>
+                <p>Design de interfaces e websites modernos especialmente para você.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Assistência Técnica</h2>
+                <p>Enfrentando dificuldades com o seu computador? Não se preocupe! Entre em contato e ficarei feliz em solucionar o problema.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Portfolio------------>
+<div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work"> <!---Projetos-->
+                <img src="./img/mostro.png" style="background-size: cover;">
+                <div class="layer">
+                    <h3>Monstro Cursor</h3>
+                    <p>Um monstro que acompanha o movimento do seu cursor.</p>
+                    <a href="./monstro/monstro.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/tiles.png">
+                <div class="layer">
+                     <h3>3D Social Icons</h3>
+                     <p>Explore meus ícones sociais, clique para conhecê-los.</p>
+                     <a href="./tiles/tiles.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/cloud.png">
+                <div class="layer">
+                     <h3>Chuva animada</h3>
+                     <p> Uma animação de chuva incorporando a palavra "LuizDev".</p>
+                     <a href="./cloud rain/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/LuizDCarvalho" target="_blank" class="btn">see more</a>
+     </div>
+</div>
+
+<!---------------Contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>luizdev452@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(61)992958544</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/luiz_dante_carvalho/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/LuizDCarvalho" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href=" https://w.app/gr3uak" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/luiz-carvalho-496b641b9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="./CV/topdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form  method="post" action="https://script.google.com/macros/s/AKfycbzww9w-CkSMftU7yc0JMHvsqaK4TolaEpt3VYzNShSb3r7GR40fi3-EKII6X9kt3FdO9Q/exec" 
+                name="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="Message" rows="6" placeholder="Enter your message"></textarea>
+                
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Luiz carvalho</p>
+    </div>
+</div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
